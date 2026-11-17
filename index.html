@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Télécharger Carton</title>
+  <style>
+    :root { --bg: #0b1120; --surface: #141c30; --border: #2a3654; --text: #e8ecf5; --muted: #8e9ab5;
+            --accent: #e3b55b; --on-accent: #0b1120; color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text);
+           font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.5; }
+    main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+    h1 { font-size: 2.4rem; margin: 0; }
+    .tagline { color: var(--muted); margin: 0.3rem 0 1.5rem; }
+    .version { display: inline-block; padding: 0.1rem 0.6rem; border: 1px solid var(--border);
+               border-radius: 999px; font-size: 0.85rem; color: var(--muted); }
+    .download { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin: 1.5rem 0 0.75rem;
+                padding: 1.1rem 1.25rem; border-radius: 12px; background: var(--accent); color: var(--on-accent);
+                text-decoration: none; }
+    .download strong { display: block; font-size: 1.15rem; }
+    .download span { font-size: 0.9rem; }
+    .soon { color: var(--muted); font-size: 0.9rem; margin: 0 0 2rem; }
+    h2 { font-size: 1.1rem; margin: 2rem 0 0.5rem; }
+    details { border-top: 1px solid var(--border); padding: 0.75rem 0; }
+    summary { cursor: pointer; font-weight: 600; }
+    .steps { padding-left: 1.25rem; }
+    pre.notes { white-space: pre-wrap; background: var(--surface); border: 1px solid var(--border);
+                border-radius: 8px; padding: 1rem; font-family: inherit; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Carton</h1>
+    <p class="tagline">Le compagnon des joueurs de jeux de cartes : score, historique, notes par matchup et banlists
+    toujours à jour. Premier jeu : Riftbound.</p>
+    <span class="version">Version 0.1.0 · 17 novembre 2026</span>
+
+    <a class="download" href="https://github.com/Unarbre/carton.github.io/releases/download/v0.1.0/Carton-0.1.0.apk">
+      <div><strong>Télécharger pour Android</strong><span>Carton-0.1.0.apk</span></div>
+      <span aria-hidden="true">↓</span>
+    </a>
+    <p class="soon">iPhone : bientôt.</p>
+
+    <h2>Installation</h2>
+    <details open>
+      <summary>Sur un téléphone Android</summary>
+      <ol class="steps">
+        <li>Touchez <em>Télécharger pour Android</em>, puis ouvrez le fichier une fois téléchargé.</li>
+        <li>Android demande d'autoriser l'installation d'applications depuis votre navigateur : acceptez.</li>
+        <li>Touchez <em>Installer</em>.</li>
+      </ol>
+    </details>
+    <details>
+      <summary>Mettre à jour</summary>
+      <p>Carton vous prévient quand une nouvelle version sort : téléchargez-la ici et installez-la par-dessus
+      l'ancienne. Vos parties et vos notes sont conservées. Les cartes et les banlists, elles, se mettent à jour
+      toutes seules.</p>
+    </details>
+
+    <h2>Nouveautés de la version 0.1.0</h2>
+    <pre class="notes">Première version, pour tester l'installation.
+
+- Écran d'accueil : le set en cours et la banlist Standard du jour, avec la prochaine vague annoncée.
+- Le catalogue Riftbound est inclus (cartes, sets, historique daté des banlists) : l'application fonctionne sans réseau.
+
+La piste de score, les decks, les parties et les notes arrivent dans les prochaines versions.</pre>
+
+    <footer>
+      <p><a href="https://github.com/Unarbre/carton.github.io/releases">Toutes les versions</a></p>
+      <p>Carton est un projet de fan non officiel, ni approuvé ni sponsorisé par Riot Games. Riftbound et les
+      illustrations des cartes appartiennent à Riot Games.</p>
+    </footer>
+  </main>
+</body>
+</html>
