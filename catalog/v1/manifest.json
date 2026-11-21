@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "games": {
     "riftbound": {
-      "version": "811abc0b08ba6f00",
+      "version": "a8fe8b7fe21cba71",
       "file": "riftbound.json",
-      "sha256": "7679c57e23a50d11127d81209ec2f90c37fb49e971d647fe375be5cdfa377261"
+      "sha256": "d134aaa3ec24d57479482090e361a2fbec7c87f7dd72089b801991b4e8a6a4a6"
     }
   }
 }
